@@ -9,18 +9,18 @@ jobs:
     environment:
       name: development
     steps:
-      - run: echo "env ${{ secrets.ENVIRONMENT }}"
+      - run: echo "env $ENVIRONMENT"
 
   staging:
     runs-on: ubuntu-slim
     environment:
       name: staging
     steps:
-      - run: echo "env ${{ secrets.ENVIRONMENT }}"
+      - run: echo "env $ENVIRONMENT"
 
   production:
     runs-on: ubuntu-slim
     environment:
       name: production
     steps:
-      - run: echo "env ${{ secrets.ENVIRONMENT }}"
+      - run: echo "env $ENVIRONMENT"
